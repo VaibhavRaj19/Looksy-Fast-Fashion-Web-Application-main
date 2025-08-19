@@ -1,0 +1,28 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob {
+  width: 89.6px;
+  height: 89.6px;
+  border: 11.2px solid #0000;
+  background: radial-gradient(farthest-side, #474bff 98%, #0000) 0 0 / 22.4px
+      22.4px,
+    radial-gradient(farthest-side, #474bff 98%, #0000) 100% 0 / 22.4px 22.4px,
+    radial-gradient(farthest-side, #474bff 98%, #0000) 100% 100% / 22.4px 22.4px,
+    radial-gradient(farthest-side, #474bff 98%, #0000) 0 100% / 22.4px 22.4px,
+    linear-gradient(#474bff 0 0) center / 44.8px 44.8px, #fff;
+  background-repeat: no-repeat;
+  filter: blur(4.5px) contrast(10);
+  animation: blob-xa27qk 0.8s infinite;
+}
+
+@keyframes blob-xa27qk {
+  100% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0, center;
+  }
+}
